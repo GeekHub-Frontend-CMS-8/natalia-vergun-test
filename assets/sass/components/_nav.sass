@@ -1,0 +1,50 @@
+.nav-container
+  max-width: 758px
+  max-height: 65px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: nowrap
+  margin: 0 auto
+
+input
+  display: none
+
+.nav-logo
+  width: 100%
+  height: auto
+
+.nav-list
+  display: none
+  @media (min-width: 768px)
+    display: block
+
+.nav-list__item
+  padding: 0 1em
+  display: inline-block
+
+.nav-list__item__link
+  font-size: 16px
+  font-weight: 700
+  line-height: 400px
+  text-transform: uppercase
+  letter-spacing: 2.4px
+  color: $inversed-color
+  &:hover
+    color: $secondary-color
+    text-decoration: none
+  &:nth-child(3)
+    background-color: #16a085
+
+.nav-toggle
+  display: block
+  @media (min-width: 768px)
+    display: none
+
+.fa-bars
+  background-color: transparent
+  border: none
+  color: $inversed-color
+  font-size: 40px
+  cursor: pointer
